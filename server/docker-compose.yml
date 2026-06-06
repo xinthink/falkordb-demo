@@ -1,0 +1,12 @@
+services:
+  falkordb:
+    image: falkordb/falkordb:latest
+    container_name: falkordb
+    ports:
+      - "6379:6379"    # Graph database
+      - "3000:3000"    # Browser UI
+    environment:
+      - REDIS_ARGS=--appendonly yes
+    volumes:
+      - ./falkordb-data:/var/lib/falkordb/data
+    restart: unless-stopped
