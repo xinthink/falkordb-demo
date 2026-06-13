@@ -2,7 +2,7 @@
 
 A comprehensive demonstration of FalkorDB Lite graph database operations using a movies dataset (Person/Movie nodes with ACTED_IN/DIRECTED/WORKED_WITH relationships).
 
-> **Server variant**: See [`server/`](server/) for a Docker-based setup with the FalkorDB Browser UI, data persistence via bind mounts, and the same demo dataset.
+> **Server variants**: See [`server/`](server/) for FalkorDB (Docker) or [`neo4j/`](neo4j/) for Neo4j (Docker) — same dataset, same Cypher queries, different engines.
 
 ## Overview
 

@@ -1,0 +1,12 @@
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    ports:
+      - "7474:7474"    # Browser UI (HTTP)
+      - "7687:7687"    # Bolt protocol
+    environment:
+      - NEO4J_AUTH=neo4j/movies_demo
+    volumes:
+      - ./neo4j-data:/data
+    restart: unless-stopped
