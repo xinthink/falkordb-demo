@@ -1,9 +1,11 @@
 [project]
 name = "falkordb-demo"
-version = "0.1.0"
+version = "0.2.0"
 description = "FalkorDB Lite demo showcasing graph database operations with a movies dataset"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "falkordblite>=0.7.0",
+    "falkordb>=1.2.0",
+    "neo4j>=5.0",
 ]
